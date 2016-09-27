@@ -49,7 +49,7 @@ class Notebook
         $this->type = $type;
     }
 
-    public function showallNotebookInformation()
+    public function showAllNotebookInformation()
     {
         echo "Vendor: " . $this->vendor . "<br/>";
         echo "Type: " . $this->type . "<br/>";
@@ -75,16 +75,16 @@ $myLaptop1 = new Notebook('HP', 'HP EliteBook 840 G1', 1000);
 $myLaptop2 = new Notebook('HP', 'HP ProBook 640 G1', 700);
 $myLaptop3 = new Notebook('HP', 'HP Pavilion 13-a100 x360', 500);
 
-$myLaptop1->showallNotebookInformation();
-$myLaptop2->showallNotebookInformation();
-$myLaptop3->showallNotebookInformation();
+$myLaptop1->showAllNotebookInformation();
+$myLaptop2->showAllNotebookInformation();
+$myLaptop3->showAllNotebookInformation();
 
 echo $myLaptop1;
 echo $myLaptop2;
 echo $myLaptop3;
 
 $myLaptop1->setPrice(900);
-$myLaptop1->showallNotebookInformation();
+$myLaptop1->showAllNotebookInformation();
 
 $myLaptop4 = clone $myLaptop3;
 echo $myLaptop4;
